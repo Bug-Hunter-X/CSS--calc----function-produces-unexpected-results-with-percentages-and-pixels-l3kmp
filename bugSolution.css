@@ -1,0 +1,13 @@
+/* bugSolution.css */
+/* Solution 1: Using viewport units (vw) for a more reliable calculation */
+.element {
+  width: calc(50vw - 10px);
+}
+
+/* Solution 2: Using JavaScript for dynamic width calculation */
+/* Add JavaScript to calculate the width dynamically */
+<script>
+  const element = document.querySelector('.element');
+  const containerWidth = element.parentElement.offsetWidth;
+  element.style.width = `${containerWidth * 0.5 - 10}px`;
+</script>
